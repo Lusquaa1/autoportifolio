@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.topbar {
+				width: 100%;
+				height: 100px;
+				background: #262626;
+				transition: 0.3s;
+			}
+
+			section {
+				width: 100%;
+				height: 100vh;
+			}
+		</style>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$(".topbar").css({ opacity: "0" });
+					} else {
+						$(".topbar").css({ opacity: "1" });
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="topbar">
+			<section></section>
+			<section></section>
+		</div>
+	</body>
+</html>
