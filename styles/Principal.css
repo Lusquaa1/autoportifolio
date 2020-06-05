@@ -14,7 +14,7 @@ html {
 
 body {
 	background-color: black;
-	height: 2100px;
+	height: 2250px;
 }
 
 h1 {
@@ -121,6 +121,16 @@ hr {
 	filter: invert();
 	width: 25px;
 	transform: rotateX(0.5turn);
+
+	margin: 20px 10px 10px 10px;
+}
+
+.arrowDown2 {
+	filter: invert();
+	width: 25px;
+
+	position: absolute;
+	top: 210%;
 }
 
 #about {
@@ -142,7 +152,7 @@ hr {
 #about h1 {
 	text-align: center;
 
-	margin: 50px;
+	margin: 50px 50px 50px 50px;
 
 	letter-spacing: 4px;
 }
@@ -161,8 +171,103 @@ hr {
 
 	text-indent: 10px;
 }
-@media only screen and (max-width: 780px) {
-	body {
-		background-color: black;
-	}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0px;
+
+	width: 100%;
+
+	position: absolute;
+	top: 225%;
+
+	align-items: center;
+
+	margin: 20px 0px;
+}
+
+#contact h1 {
+	text-align: center;
+
+	margin: 50px;
+
+	letter-spacing: 4px;
+}
+
+.center {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.email a {
+	padding: 10px 40px;
+	height: 50px;
+	background-color: #95a5a6;
+	text-align: center;
+	border-radius: 8px;
+	cursor: pointer;
+
+	position: relative;
+	top: 10%;
+	letter-spacing: 5px;
+	font-size: 30px;
+	text-decoration: none;
+	color: #34495e;
+	border: 4px #555e5f solid;
+}
+
+.email a:hover {
+	background-color: #555e5f;
+	color: white;
+}
+
+.contato {
+	text-align: center;
+
+	width: 100%;
+
+	left: 0%;
+}
+
+.contato h2 {
+	width: 50%;
+	margin: 50px auto 25px;
+
+	text-indent: 10px;
+
+	font-size: 30px;
+
+	font-family: "Ubuntu";
+	font-weight: bold;
+}
+
+.contato p {
+	width: 50%;
+	margin: 25px auto 100px;
+
+	text-indent: 10px;
+}
+
+.directs {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0px;
+
+	width: 100%;
+
+	position: absolute;
+	top: 318%;
+
+	align-items: center;
+}
+
+.directs p {
+	text-decoration: underline;
+	font-size: 15px;
+	color: #414747;
 }
