@@ -103,6 +103,10 @@ hr {
 	75% {
 		opacity: 1;
 	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .arrowDown {
