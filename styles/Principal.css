@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: whitesmoke;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-color: black;
+	height: 2100px;
+}
+
+h1 {
+	font-family: "Ubuntu";
+	font-weight: bold;
+	font-size: 45px;
+}
+
+p {
+	font-family: "Roboto";
+	font-size: 22px;
+	margin: 0px 15px 0px 0px;
+}
+
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav {
+	width: 100%;
+	height: 75px;
+}
+
+nav {
+	width: 75%;
+	height: 75px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin: 0px 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav span {
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+nav span a {
+	text-decoration: none;
+	font-size: 15px;
+}
+
+hr {
+	width: 100%;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+
+	text-align: center;
+
+	width: 700px;
+	height: 370px;
+
+	align-items: center;
+
+	position: absolute;
+	top: 25%;
+}
+
+.home h1 {
+	font-size: 64px;
+}
+
+.home h2 {
+	animation: home 4s 1;
+}
+
+@keyframes home {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+}
+
+.arrowDown {
+	filter: invert();
+	width: 25px;
+
+	position: absolute;
+	top: 90%;
+}
+
+.arrowUp {
+	filter: invert();
+	width: 25px;
+	transform: rotateX(0.5turn);
+}
+
+#about {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0px;
+
+	width: 100%;
+
+	position: absolute;
+	top: 115%;
+
+	align-items: center;
+
+	margin: 20px 0px;
+}
+
+#about h1 {
+	text-align: center;
+
+	margin: 50px;
+
+	letter-spacing: 4px;
+}
+
+.sobre {
+	text-align: center;
+
+	width: 100%;
+
+	left: 0%;
+}
+
+.sobre p {
+	width: 50%;
+	margin: 50px auto;
+
+	text-indent: 10px;
+}
+@media only screen and (max-width: 780px) {
+	body {
+		background-color: black;
+	}
+}

@@ -1,74 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-
 		<link
-			rel="stylesheet"
-			type="text/css"
-			href="Styles/style.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="Styles/animation.css" />
-
 		<link
-			href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+			href="./styles/Principal.css"
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="scss/style.scss" />
-
-		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-		<title>Lucas Aguiar</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Piedra&family=Roboto&family=Ubuntu:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
 	</head>
 	<body>
-		<nav>
-			<div>
-				<ul class="nav-links">
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="#container2">About</a></li>
-					<li><a href="#">Projects</a></li>
-				</ul>
+		<div class="container">
+			<div class="nav">
+				<nav>
+					<span><a href="index.html"> INÍCIO</a></span>
+					<span><a href="#about">SOBRE</a></span>
+					<span><a href="">CONTATO</a></span>
+				</nav>
 			</div>
-			<div class="logo">
-				<a href="./index.html">Lucas Aguiar</a>
-			</div>
-		</nav>
 
-		<div id="container">
-			<span class="text1">
-				Olá
-			</span>
-			<span class="text2">
-				<span>Meu nome é </span>
-				<span class="nome"
-					><a href="./index.html">Lucas Aguiar</a></span
+			<div
+				class="home"
+				data-aos="fade-left"
+				data-aos-offset="300"
+				data-aos-duration="2000"
+			>
+				<h1>Olá</h1>
+				<h2
+					data-aos="fade-down"
+					data-aos-duration="2000"
+					data-aos-delay="1000"
 				>
-			</span>
-		</div>
+					Meu nome é Lucas Aguiar
+				</h2>
+			</div>
+			<div class="arrowDown">
+				<a href="#about"
+					><img src="./img/downarrow.svg" alt=""
+				/></a>
+			</div>
 
-		<div id="container2" class="cont">
-			<!-- cd-intro -->
-			<section class="cd-intro">
-				<h1 class="cd-headline letters type">
-					<span>Estudando <br /></span>
-					<span class="cd-words-wrapper waiting">
-						<b class="is-visible">HTML</b>
-						<b>CSS</b>
-						<b>Python</b>
-						<b>JavaScript</b>
-					</span>
-				</h1>
-			</section>
+			<div
+				id="about"
+				data-aos="fade-in"
+				data-aos-duration="7000"
+			>
+				<div class="arrowUp">
+					<a href="#"
+						><img src="./img/downarrow.svg" alt=""
+					/></a>
+				</div>
+
+				<div>
+					<h1>SOBRE</h1>
+				</div>
+				<div class="sobre" data-aos-duration="1500">
+					<p>
+						<em
+							>"Nasci em meio a toda tecnologia e nela me
+							apaixonei"</em
+						>
+					</p>
+
+					<p class="right">
+						Vim ao mundo junto com o Playstation 2 que
+						inclusive, foi primerio video-game. Sou e
+						sempre fui muito fascinado com a tecnologia e
+						toda sua proporção
+					</p>
+					<p>
+						Em 2018 obtive o meu primeiro certificado
+						tecnico em montagem e manutenção de
+						computadores, hoje curso engenharia eletrônica
+						no instituto federal, e faço parte da
+						<a href="https://frc5800.com/">FRC5800</a> e
+						sou freelancer.
+					</p>
+				</div>
+			</div>
 		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
