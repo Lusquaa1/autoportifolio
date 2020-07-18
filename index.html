@@ -1,153 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<link
-			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-			rel="stylesheet"
-		/>
 
-		<link
-			href="./styles/Principal.css"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="./css/style.css" />
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Piedra&family=Roboto&family=Ubuntu:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Lucas Aguiar</title>
+		<title>LucasAguiar</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="nav">
-				<nav>
-					<span><a href="index.html"> INÍCIO</a></span>
-					<span><a href="#about">SOBRE</a></span>
-					<span><a href="#contact">CONTATO</a></span>
-				</nav>
-			</div>
-
-			<div
-				class="home"
-				data-aos="fade-left"
-				data-aos-offset="300"
-				data-aos-duration="2000"
-			>
-				<h1>Olá</h1>
-				<h2
-					data-aos="fade-down"
-					data-aos-duration="2000"
-					data-aos-delay="1000"
-				>
-					Meu nome é Lucas Aguiar
-				</h2>
-			</div>
-			<div class="arrowDown">
-				<a href="#about"
-					><img src="./img/downarrow.svg" alt=""
-				/></a>
-			</div>
-
-			<div
-				id="about"
-				data-aos="fade-in"
-				data-aos-duration="7000"
-			>
-				<div class="arrowUp">
-					<a href="#"
-						><img src="./img/downarrow.svg" alt=""
-					/></a>
-				</div>
-
-				<div>
-					<h1>SOBRE</h1>
-				</div>
-				<div class="sobre" data-aos-duration="1500">
+		<header>
+			<a href="#" class="logo">Aguiar</a>
+			<ul>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#about">Sobre</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</header>
+		<main>
+			<section id="banner">
+				<div class="title">
+					<h1>WebDesigner e Desenvolvedor Front End</h1>
 					<p>
-						<em
-							>"Nasci em meio a toda tecnologia e nela me
-							apaixonei"</em
-						>
-					</p>
-
-					<p>
-						Sou e sempre fui muito fascinado com a
-						tecnologia e toda sua proporção, ampliando
-						diariamente meu conhecimento na área. Aprendo
-						com facilidade e agilidade assuntos que se
-						relacionam a computação e programação.
-					</p>
-					<p>
-						Em 2018 obtive o meu primeiro certificado
-						tecnico em montagem e manutenção de
-						computadores, hoje curso eletrônica no
-						Instituto Federal de Santa Catarina (<a
-							href="https://www.ifsc.edu.br/"
-							>IFSC</a
-						>), faço parte da
-						<a href="https://frc5800.com/">FRC5800</a> e
-						sou freelancer.
+						Programo WebSites simples e maravilhosos, e
+						amo o que faço
 					</p>
 				</div>
-			</div>
+			</section>
 
-			<div class="arrowDown2">
-				<a href="#contact"
-					><img src="./img/downarrow.svg" alt=""
-				/></a>
-			</div>
-
-			<div
-				id="contact"
-				data-aos="fade-in"
-				data-aos-duration="7000"
-			>
-				<div class="arrowUp">
-					<a href="#about"
-						><img src="./img/downarrow.svg" alt=""
-					/></a>
-				</div>
-
-				<div>
-					<h1>CONTATO</h1>
-				</div>
-				<div class="contato" data-aos-duration="1500">
-					<h2>
-						E-mail
-					</h2>
+			<section id="about">
+				<div class="me">
+					<h1>
+						Olá, Sou Lucas Aguiar, prazer em conhece-lo
+					</h1>
 
 					<p>
-						Lucasaguiar.floripa@gmail.com
+						Iniciei minha jornada como freelancer há menos
+						de 1 ano, trabalhei remotamente em alguns
+						<br />pequenos projetos. Estou em processo
+						evolutivo constante e trabalhando cada vez
+						mais para<br />
+						solucionar os problemas das melhores formas.
 					</p>
+				</div>
+				<div class="do1">
+					<img src="./img/cubo.svg" alt="cube" />
+					<div class="docenter">
+						<h1>WebDesigner</h1>
+						<p>
+							Priorizo uma estrutura de conteúdo com
+							designs limpo e interativo
+						</p>
 
-					<div class="center">
-						<div
-							class="email"
-							data-aos="fade-right"
-							data-aos-duration="1500"
-						>
-							<a
-								href="mailto:lucasaguiar.floripa@gmail.com"
-								>Enviar</a
-							>
-						</div>
+						<h2>Gosto de Projetar</h2>
+						<h3>UI, UX, Web</h3>
 					</div>
 				</div>
-			</div>
+				<div class="do2">
+					<img src="./img/monitor.svg" alt="monitor" />
+					<div class="docenter">
+						<h1>Desenvolvedor Front-End</h1>
+						<p>
+							Gosto de codificar WebSites do zero, dando
+							vida a diversas ideias
+						</p>
 
-			<div class="directs">
-				<p><em>All directs Reserved</em></p>
-			</div>
-		</div>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+						<h2>Linguagens as quais conheço</h2>
+						<p>HTML, CSS, JavaScript</p>
+					</div>
+				</div>
+			</section>
 
-		<script>
-			AOS.init();
-		</script>
+			<section id="contact">
+				<h1 class="title">Então vamos conversar?</h1>
+
+				<p>
+					Interessado em trabalhar juntos?, Deveríamos
+					marcar uma <br />conversa. Vou lá comprar nosso
+					café
+				</p>
+
+				<h3
+					class="button"
+					id="hbutton"
+					onclick="Contact()"
+				>
+					Vamos fazer isto!
+				</h3>
+			</section>
+		</main>
+		<footer>
+			<h1>"Viver, aprender e evoluir"</h1>
+
+			<p>Feito por mim &copy; Lucas Aguiar</p>
+
+			<div class="iconcredit">
+				Ícones feitos por
+
+				<a
+					href="https://smashicons.com/"
+					title="Smashicons"
+					><u>Smashicons</u></a
+				>
+				&
+
+				<a
+					href="https://www.flaticon.com/br/autores/freepik"
+					title="Freepik"
+					><u>Freepik</u></a
+				>
+				from
+				<a
+					href="https://www.flaticon.com/br/"
+					title="Flaticon"
+				>
+					<em>flaticon.com</em></a
+				>
+			</div>
+		</footer>
+		<script src="./js/Nav.js"></script>
 	</body>
 </html>

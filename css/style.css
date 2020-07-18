@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #000;
+	min-height: 200vh;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: white;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+header.sticky {
+	padding: 3.5px 100px;
+	background: #fff;
+}
+
+header .logo {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+#banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/background.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 0.3s;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+	color: #000;
+}
+
+#banner .title {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -60%);
+	letter-spacing: 2px;
+	text-align: center;
+	transition: 0.6s;
+}
+
+#banner .title h1 {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#banner .title p {
+	margin-top: 10px;
+}
+
+#about {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	transition: 0.3s;
+}
+
+#about .me {
+	position: relative;
+	width: 100%;
+	height: 35%;
+	float: left;
+	color: #fff;
+	text-align: center;
+	padding-top: 75px;
+}
+
+#about .do1 {
+	position: relative;
+	width: 50%;
+	height: 65%;
+	float: left;
+	background: #2d3436;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	transition: 0.3s;
+}
+
+#about .do1 img,
+.do2 img {
+	width: 75px;
+
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translate(-50%, -15%);
+	transition: 0.3s;
+}
+
+#about .do1 h1,
+#about .do2 h1 {
+	margin-top: 100px;
+	transition: 0.6s;
+}
+
+#about .do1 h2,
+#about .do2 h2 {
+	font-size: 1.25em;
+	color: #636e72;
+	transition: 0.6s;
+}
+
+#about .do1 h3,
+#about .do2 h3 {
+	font-size: 1em;
+	transition: 0.6s;
+}
+
+#about .do1 p,
+#about .do2 p {
+	margin-top: 10px;
+	font-size: 14px;
+	transition: 0.6s;
+	font-weight: 500;
+}
+
+.docenter {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+}
+
+#about .do2 {
+	position: relative;
+	width: 50%;
+	height: 65%;
+	float: right;
+	background: #b2bec3;
+	text-align: center;
+}
+
+#contact {
+	position: relative;
+	width: 100%;
+	padding-top: 10px;
+	height: 55vh;
+	transition: 0.3s;
+	color: #fff;
+	text-align: center;
+}
+
+#contact h1.title {
+	margin-top: 25px;
+	font-size: 2em;
+}
+
+#contact p {
+	margin-top: 50px;
+}
+
+#contact h3.button {
+	display: inline;
+	padding: 15px 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	cursor: pointer;
+	transition: 1s;
+}
+
+#contact h3.button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+footer {
+	text-align: center;
+	height: 25vh;
+	border-top: 1px solid rgb(56, 56, 56);
+	color: #fff;
+}
+
+footer h1 {
+	margin: 100px;
+	font-size: 1.75em;
+}
+
+footer .iconcredit {
+	font-size: 12px;
+}
+
+footer .iconcredit a {
+	text-decoration: none;
+	color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 100px;
+	}
+
+	header.sticky {
+		padding: 3.5px 100px;
+		background: #fff;
+	}
+
+	header .logo {
+		font-size: 1.75em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	header ul li a {
+		font-size: 0.9em;
+	}
+
+	#banner .title {
+		left: 50%;
+		top: 65%;
+		transform: translate(-50%, -65%);
+		width: 350px;
+	}
+
+	#about {
+		position: relative;
+		width: 100%;
+		height: 200vh;
+		transition: 0.3s;
+	}
+
+	#about .me {
+		position: relative;
+		width: 100%;
+		height: 20%;
+		float: none;
+	}
+
+	#about .do1 {
+		position: relative;
+		width: 100%;
+		height: 35%;
+		float: none;
+	}
+
+	#about .do2 {
+		position: relative;
+		width: 100%;
+		height: 35%;
+		float: none;
+	}
+
+	footer {
+		height: 20vh;
+	}
+
+	footer h1 {
+		margin: 100px auto;
+		width: 300px;
+	}
+
+	footer .iconcredit {
+		margin-bottom: 5px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#about .me {
+		position: relative;
+		width: 100%;
+		height: 27%;
+		float: none;
+	}
+
+	#about .do1 {
+		position: relative;
+		width: 100%;
+		height: 30%;
+		float: none;
+	}
+
+	#about .do2 {
+		position: relative;
+		width: 100%;
+		height: 30%;
+		float: none;
+	}
+
+	#contact {
+		height: 75vh;
+	}
+}
