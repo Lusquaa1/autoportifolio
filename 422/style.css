@@ -5,7 +5,7 @@
 }
 
 body {
-	height: 100vh;
+	height: 95vh;
 	background-color: black;
 }
 
@@ -34,4 +34,17 @@ td.dia {
 
 td.NDA {
 	color: black;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	th,
+	td {
+		font-size: 10px;
+		width: 50px;
+	}
 }
