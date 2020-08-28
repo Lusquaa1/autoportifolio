@@ -9,6 +9,88 @@ body {
 	background-color: black;
 }
 
+.hamburguer {
+	position: fixed;
+	top: 3%;
+	left: 3%;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.hamburguer .line {
+	background-color: white;
+	width: 30px;
+	height: 3px;
+	margin: 4px;
+	transition: 1s;
+}
+
+.hamburguer .line.l1open {
+	background-color: black;
+	transform: rotate(45deg);
+	margin-bottom: -18%;
+}
+
+.hamburguer .line.l2open {
+	opacity: 0;
+}
+
+.hamburguer .line.l3open {
+	background-color: black;
+	transform: rotate(-45deg);
+	margin-top: -18%;
+}
+
+nav .navbar {
+	background-color: white;
+	color: black;
+	width: 20%;
+	max-width: 300px;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	left: -25%;
+	transition: 1s;
+	text-align: center;
+}
+
+nav .navbar.nvopen {
+	left: 0%;
+}
+
+nav .navbar ul {
+	width: 75%;
+	height: 60%;
+	margin: auto;
+	list-style: none;
+	justify-content: space-around;
+}
+
+nav .navbar li {
+	color: black;
+	text-decoration: none;
+	align-items: center;
+	display: inline;
+	display: flex;
+	flex-direction: column;
+	margin: 50px 0;
+	padding: 10px 0px;
+	transition: 1.5s;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+nav .navbar li a {
+	color: #0984e3;
+	text-decoration: none;
+}
+
+nav .navbar li:hover {
+	background-color: #636e72;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
@@ -46,5 +128,15 @@ footer {
 	td {
 		font-size: 10px;
 		width: 50px;
+	}
+
+	nav .navbar {
+		width: 100%;
+		max-width: 400px;
+		left: -100%;
+	}
+
+	nav .navbar.nvopen {
+		left: 0%;
 	}
 }
