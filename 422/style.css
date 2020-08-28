@@ -131,6 +131,7 @@ footer {
 	}
 
 	nav .navbar {
+		height: 100%;
 		width: 100%;
 		max-width: 400px;
 		left: -100%;
