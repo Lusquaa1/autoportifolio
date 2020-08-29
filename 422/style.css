@@ -123,6 +123,21 @@ footer {
 	text-align: center;
 }
 
+.today {
+	background-color: #fab1a0;
+}
+
+.today td {
+	color: black;
+}
+
+.today td a {
+	color: black;
+}
+
+.today td.NDA {
+	color: #fab1a0;
+}
 @media only screen and (max-width: 600px) {
 	th,
 	td {
