@@ -118,6 +118,22 @@ td.NDA {
 	color: black;
 }
 
+.null {
+	border: none;
+}
+
+.legenda {
+	font-size: 18px;
+}
+
+.legenda.now {
+	background-color: rgba(1, 165, 1, 0.562);
+}
+
+.legenda.next {
+	background-color: rgba(245, 245, 30, 0.705);
+}
+
 footer {
 	width: 100%;
 	text-align: center;
@@ -137,6 +153,14 @@ footer {
 
 .today td.NDA {
 	color: #fab1a0;
+}
+
+.today .now {
+	background-color: rgba(1, 165, 1, 0.562);
+}
+
+.today .next {
+	background-color: rgba(245, 245, 30, 0.705);
 }
 @media only screen and (max-width: 600px) {
 	th,
