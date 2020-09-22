@@ -28,7 +28,8 @@ body {
 
 #Time {
 	position: relative;
-	animation: time 1s 1;
+	animation: time 1s;
+	animation-iteration-count: 1;
 }
 
 @keyframes time {
@@ -42,7 +43,8 @@ body {
 
 .container1 {
 	position: relative;
-	animation: c1 2s 1;
+	animation: c1 2s;
+	animation-iteration-count: 1;
 }
 
 @keyframes c1 {
@@ -57,7 +59,8 @@ body {
 
 .container2 {
 	position: relative;
-	animation: c2 2s 1;
+	animation: c2 2s;
+	animation-iteration-count: 1;
 }
 
 @keyframes c2 {
