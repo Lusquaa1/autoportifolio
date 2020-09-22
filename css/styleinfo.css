@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
 }
 
 html {
@@ -95,6 +96,7 @@ body {
 	margin-top: 500px;
 	border: 1px solid rgb(122, 122, 122);
 	border-radius: 8px;
+	max-width: 200px;
 	width: 75%;
 	margin: 0 auto;
 	transition: 0.5s;
