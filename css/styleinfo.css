@@ -25,6 +25,50 @@ body {
 	padding: 50px 0;
 }
 
+#Time {
+	position: relative;
+	animation: time 1s 1;
+}
+
+@keyframes time {
+	from {
+		top: -100px;
+	}
+	to {
+		top: 0px;
+	}
+}
+
+.container1 {
+	position: relative;
+	animation: c1 2s 1;
+}
+
+@keyframes c1 {
+	from {
+		left: -300px;
+		color: black;
+	}
+	to {
+		left: 0px;
+	}
+}
+
+.container2 {
+	position: relative;
+	animation: c2 2s 1;
+}
+
+@keyframes c2 {
+	from {
+		left: 300px;
+		color: black;
+	}
+	to {
+		left: 0px;
+	}
+}
+
 #img {
 	margin-top: 25px;
 	width: 10%;
@@ -54,6 +98,19 @@ body {
 	width: 75%;
 	margin: 0 auto;
 	transition: 0.5s;
+	animation: button 5s 1;
+}
+
+@keyframes button {
+	from {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 #contato:hover {
